@@ -8,7 +8,7 @@
                     <h2>{{item.name}}</h2>
                     <h4 class="location">
                         <img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location">
-                        <span v-if="item.location.address1">{{item.location.address1}},</span>
+                        <span class="address" v-if="item.location.address1">{{item.location.address1}},</span>
                         <span v-if="item.location.city">{{item.location.city}}</span>
                     </h4>
                 </a>
@@ -94,5 +94,8 @@ h4.location img{
 }
 .restaurant-list ul li a:hover{
     color: #282c34;
+}
+.location .address{
+  margin-right: 5px;
 }
 </style>

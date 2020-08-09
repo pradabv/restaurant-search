@@ -15,7 +15,7 @@
                     </h4>
                 </div>
                 <div class="retaurant-img" v-for="(img, index) of selectedItem.photos" :key="index"> 
-                    <img :src="img" alt="restaurant image" title="restaurant image">
+                    <img :src="img" :alt="selectedItem.name" :title="selectedItem.name">
                 </div>
             </div>
             <div class="restaurant-reviews">
@@ -70,6 +70,9 @@ export default class RestaurantDetail extends Vue {
     text-decoration: underline;
     margin-bottom: 20px;
 }
+.retaurant-header a {
+    color:  #282c34;
+}
 .retaurant-header h4.location{
     font-size: 16px;
     margin: 20px 0px;
@@ -93,7 +96,7 @@ export default class RestaurantDetail extends Vue {
 .restaurant-reviews ul{
     height: 30vh;
     padding-right: 30px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 </style>
