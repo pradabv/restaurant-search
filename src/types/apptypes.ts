@@ -1,6 +1,6 @@
 export namespace AppTypes {
     export interface AppState {
-        selectedItem: any;
+        selectedItem: Business;
         business: Business[];
     }
     
@@ -19,7 +19,7 @@ export namespace AppTypes {
     export interface Location {
         address1: string;
         city: string;
-        postal_code: number;
+        postal_code: string;
         formatted_address: string;
     }
 

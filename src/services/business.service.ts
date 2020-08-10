@@ -5,6 +5,6 @@ export default class BusinessService {
             return res.data;
       }).catch(error => {
         return error;
-    })
+    });
     }
 }

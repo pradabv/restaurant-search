@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header.vue Header MatchSnapshot 1`] = `
+<header>
+  <div class="container header">
+    <h1>Restaurant Finder</h1>
+  </div>
+</header>
+`;

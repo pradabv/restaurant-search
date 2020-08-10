@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue Home MatchSnapshot 1`] = `
+<div>
+  <header-stub appheadertext="Restaurant Finder"></header-stub>
+  <section class="main-section">
+    <div class="main-left">
+      <navigation-stub></navigation-stub>
+    </div>
+    <div class="main-right">
+      <restaurantdetail-stub></restaurantdetail-stub>
+    </div>
+  </section>
+</div>
+`;

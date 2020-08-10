@@ -1,6 +1,6 @@
 <template>
   <header>
-        <div class="container">
+        <div class="container header">
           <h1>{{appHeaderText}}</h1>
         </div>
   </header>

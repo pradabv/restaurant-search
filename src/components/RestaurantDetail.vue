@@ -29,7 +29,7 @@
                 <p v-else>No reviews found</p>
             </div>
         </div>
-        <div v-else>
+        <div v-else class="welcome-screen">
             <h3>Welcome to Restaurant Finder</h3>
             <p>Please Select a Restaurant to view details</p>
         </div>
@@ -43,7 +43,7 @@ import store from '@/store';
 @Component
 export default class RestaurantDetail extends Vue {
   mounted() {
-    store.dispatch('getJsonData')
+    store.dispatch('getJsonData');
   }
 
   get selectedItem() {
@@ -55,6 +55,7 @@ export default class RestaurantDetail extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .restaurant-details{
     flex-direction: row;
     box-sizing: border-box;
@@ -62,6 +63,9 @@ export default class RestaurantDetail extends Vue {
     place-content: flex-start;
     align-items: flex-start;
     padding: 40px;
+}
+.welcome-screen{
+   padding: 15px 250px;
 }
 .retaurant-header{
     width: 70%;

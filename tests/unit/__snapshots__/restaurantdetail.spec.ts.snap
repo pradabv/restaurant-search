@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantDetail.vue RestaurantDetail MatchSnapshot after select item 1`] = `
+<div>
+  <div>
+    <div class="restaurant-details">
+      <div class="retaurant-header">
+        <h2><a href="https://www.yelp.com/biz/billy-the-butcher-hamburg-2?adjust_creative=nMAD8ywU1QBl_RMSM215Bg&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_graphql&amp;utm_source=nMAD8ywU1QBl_RMSM215Bg" target="_blank">Billy The Butcher</a></h2>
+        <p><b>Rating:</b> 4</p>
+        <h4 class="location"><img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location"> <span>Jungfernstieg 16 - 20
+4. OG
+20354 Hamburg
+Germany</span></h4>
+        <h4 class="location"><img src="../assets/icons/phone.svg" alt="restaurant number" title="restaurant number"> <span>+49 40 57283299</span></h4>
+      </div>
+      <div class="retaurant-img"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/RDKmsxZZczP4EiTCB9AYOw/o.jpg" alt="Billy The Butcher" title="Billy The Butcher"></div>
+    </div>
+    <div class="restaurant-reviews">
+      <h5>Reviews</h5>
+      <ul>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>I've had decent lunches at Billy The Butcher a couple of times now. It's what I would describe as a trendy burger joint on the 4th floor of the Alsterhaus...</p>
+        </li>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>We arrived Hamburg at noon and decide to get some burgers before going to the office. This place is pretty close to the city hall and rated well.
+
+            I ordered...</p>
+        </li>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>Nice place to have good burger for lunch. Most of personnel speak English which is good. Prices are decent, also I would recommend to share fries with a...</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RestaurantDetail.vue RestaurantDetail home screen MatchSnapshot 1`] = `
+<div>
+  <div>
+    <div class="restaurant-details">
+      <div class="retaurant-header">
+        <h2><a href="https://www.yelp.com/biz/billy-the-butcher-hamburg-2?adjust_creative=nMAD8ywU1QBl_RMSM215Bg&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_graphql&amp;utm_source=nMAD8ywU1QBl_RMSM215Bg" target="_blank">Billy The Butcher</a></h2>
+        <p><b>Rating:</b> 4</p>
+        <h4 class="location"><img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location"> <span>Jungfernstieg 16 - 20
+4. OG
+20354 Hamburg
+Germany</span></h4>
+        <h4 class="location"><img src="../assets/icons/phone.svg" alt="restaurant number" title="restaurant number"> <span>+49 40 57283299</span></h4>
+      </div>
+      <div class="retaurant-img"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/RDKmsxZZczP4EiTCB9AYOw/o.jpg" alt="Billy The Butcher" title="Billy The Butcher"></div>
+    </div>
+    <div class="restaurant-reviews">
+      <h5>Reviews</h5>
+      <ul>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>I've had decent lunches at Billy The Butcher a couple of times now. It's what I would describe as a trendy burger joint on the 4th floor of the Alsterhaus...</p>
+        </li>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>We arrived Hamburg at noon and decide to get some burgers before going to the office. This place is pretty close to the city hall and rated well.
+
+            I ordered...</p>
+        </li>
+        <li>
+          <p><b>Rating:</b> 4</p>
+          <p>Nice place to have good burger for lunch. Most of personnel speak English which is good. Prices are decent, also I would recommend to share fries with a...</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

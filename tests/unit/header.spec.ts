@@ -1,14 +1,21 @@
-import { expect } from 'chai';
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, mount } from '@vue/test-utils';
 import Header from '@/components/Header.vue';
 
 describe('Header.vue', () => {
-    it('renders props.msg when passed', () => {
+    it('Header renders props.appHeaderText when passed', () => {
+        const appHeaderText = 'New Title';
+        const wrapper = shallowMount(Header, {
+          propsData: { appHeaderText }
+        });
+        expect(wrapper.text()).toContain(appHeaderText);
+    });
+
+    it('Header MatchSnapshot', () => {
       const appHeaderText = 'Restaurant Finder';
-      const wrapper = shallowMount(Header, {
+      const wrapper = mount(Header, {
         propsData: { appHeaderText }
-      })
-      expect(wrapper.text()).to.include(appHeaderText)
-    })
-  })
+      });
+      expect(wrapper.html()).toMatchSnapshot();
+    });
+  });
   

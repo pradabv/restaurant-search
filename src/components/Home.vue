@@ -28,13 +28,8 @@ import store from '@/store';
 })
 export default class Home extends Vue {
   mounted() {
-    store.dispatch('getJsonData')
+    store.dispatch('getJsonData');
   }
-
-  get selectedItem() {
-    return store.state.selectedItem;
-  }
-
 }
 </script>
 

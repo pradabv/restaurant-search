@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation.vue Navigation after selecting item MatchSnapshot 1`] = `
+<div>
+  <h3>1 Restaurant</h3>
+  <div class="restaurant-list">
+    <ul>
+      <li class="active"><a>
+          <h2>Billy The Butcher</h2>
+          <h4 class="location"><img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location"> <span class="address">Jungfernstieg 16 - 20,</span> <span>Hamburg</span></h4>
+        </a></li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Navigation.vue Navigation before selecting item MatchSnapshot 1`] = `
+<div>
+  <h3>1 Restaurant</h3>
+  <div class="restaurant-list">
+    <ul>
+      <li class="active"><a>
+          <h2>Billy The Butcher</h2>
+          <h4 class="location"><img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location"> <span class="address">Jungfernstieg 16 - 20,</span> <span>Hamburg</span></h4>
+        </a></li>
+    </ul>
+  </div>
+</div>
+`;

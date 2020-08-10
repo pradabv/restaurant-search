@@ -34,7 +34,7 @@ export default class Navigation extends Vue {
   }
 
   selectItem(item: AppTypes.Business) {
-    store.commit('setSelectedItem', item)
+    store.commit('setSelectedItem', item);
   }
   
 }
