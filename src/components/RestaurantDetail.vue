@@ -9,7 +9,7 @@
                         <img src="../assets/icons/marker.svg" alt="restaurant location" title="restaurant location">
                         <span>{{selectedItem.location.formatted_address}}</span>
                     </h4>
-                    <h4 class="location">
+                    <h4 class="location" v-if="selectedItem.display_phone">
                         <img src="../assets/icons/phone.svg" alt="restaurant number" title="restaurant number">
                         <span>{{selectedItem.display_phone}}</span>
                     </h4>
