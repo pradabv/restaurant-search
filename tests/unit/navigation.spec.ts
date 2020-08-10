@@ -9,16 +9,10 @@ const localVueWithVuex = createLocalVue();
 localVueWithVuex.use(Vuex);
 
 describe('Navigation.vue', () => {
-  let store: any;
-  
-  beforeEach(() => {
-    store = new Vuex.Store(Store);
-  });
 
   it('Navigation renders no records before set data in store', () => {
     const wrapper = shallowMount(Navigation, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     expect(wrapper.findAll('ul li').length > 0).toBeFalsy();
   });
@@ -26,8 +20,7 @@ describe('Navigation.vue', () => {
   it('Navigation renders records after set data in store', () => {
     Store.commit('setJsonData', sampleData);
     const wrapper = shallowMount(Navigation, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     expect(wrapper.findAll('ul li').length).toBeGreaterThan(0);
   });
@@ -35,8 +28,7 @@ describe('Navigation.vue', () => {
   it('Navigation trigger setSelectedItem after li click', () => {
     Store.commit('setJsonData', sampleData);
     const wrapper = shallowMount(Navigation, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     wrapper.find('ul li').trigger('click');
     expect(wrapper.vm.$emit('setSelectedItem')).toBeTruthy();
@@ -48,8 +40,7 @@ describe('Navigation.vue', () => {
   it('Navigation before selecting item MatchSnapshot', () => {
     Store.commit('setJsonData', sampleData);
     const wrapper = shallowMount(Navigation, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     expect(wrapper.html()).toMatchSnapshot();
   });
@@ -58,8 +49,7 @@ describe('Navigation.vue', () => {
   it('Navigation after selecting item MatchSnapshot', () => {
     Store.commit('setJsonData', sampleData);
     const wrapper = shallowMount(Navigation, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     wrapper.find('ul li').trigger('click');
     expect(wrapper.html()).toMatchSnapshot();

@@ -4,20 +4,15 @@ import Vuex from 'vuex';
 import {sampleData} from '../mockData/mock.data';
 import Store from './../../src/store/index';
 
+
 const localVueWithVuex = createLocalVue();
 localVueWithVuex.use(Vuex);
 
-describe('RestaurantDetail.vue', () => {
-  let store: any;
-  
-  beforeEach(() => {
-    store = new Vuex.Store(Store);
-  });
+describe('RestaurantDetail.vue', () => {  
 
   it('RestaurantDetail has welcome screen before set data in store', () => {
     const wrapper = shallowMount(RestaurantDetail, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     expect(wrapper.findAll('.welcome-screen')).toBeTruthy();
   });
@@ -25,8 +20,7 @@ describe('RestaurantDetail.vue', () => {
   it('RestaurantDetail has welcome screen before set data in store', () => {
     Store.commit('setSelectedItem', sampleData[0]);
     const wrapper = shallowMount(RestaurantDetail, {
-      localVue: localVueWithVuex,
-      store
+      localVue: localVueWithVuex
     });
     expect(wrapper.findAll('.restaurant-details')).toBeTruthy();
   });
